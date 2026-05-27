@@ -23,6 +23,8 @@ This repository contains a sanitized frontend concept for a recording studio exp
 
 ## Run Locally
 
+Open the hosted demo: [https://cmesa-dev.github.io/onastudio/](https://cmesa-dev.github.io/onastudio/)
+
 Open `demo/index.html` in a browser, or serve the folder with any static file server:
 
 ```bash
