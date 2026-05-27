@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#130f13" />
+    <title>ONA Studio | Sanitized UI concept</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="wordmark" href="#">ONA<span>STUDIO</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#rooms">Rooms</a>
+        <a href="#services">Services</a>
+        <a href="#request">Request session</a>
+      </nav>
+      <span class="badge">PUBLIC UI DEMO</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">RECORDING ENVIRONMENT</p>
+          <h1>Room for sound to become a record.</h1>
+          <p class="lead">A sanitized frontend concept for discovering studio spaces and requesting a recording session. No customer content or private assets are included.</p>
+          <a class="button" href="#request">Plan a session</a>
+        </div>
+        <div class="signal" aria-label="Decorative audio waveform">
+          <div class="signal-head">
+            <span>Studio A / monitoring</span>
+            <strong>LIVE PREVIEW</strong>
+          </div>
+          <div class="wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="track">
+            <span>00:42</span>
+            <div><i></i></div>
+            <span>03:18</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rooms" id="rooms">
+        <div class="title">
+          <p class="eyebrow">SPACES</p>
+          <h2>Choose the room for the work</h2>
+        </div>
+        <article>
+          <p>01</p>
+          <h3>Control Room</h3>
+          <span>Mixing and critical listening</span>
+        </article>
+        <article>
+          <p>02</p>
+          <h3>Live Room</h3>
+          <span>Band tracking and sessions</span>
+        </article>
+        <article>
+          <p>03</p>
+          <h3>Vocal Booth</h3>
+          <span>Focused recording workflow</span>
+        </article>
+      </section>
+
+      <section class="service-grid" id="services">
+        <div>
+          <p class="eyebrow">WORKFLOW</p>
+          <h2>A simple route from enquiry to session</h2>
+        </div>
+        <ol>
+          <li><b>01</b><strong>Describe your session</strong><span>Recording, mix review or vocal work.</span></li>
+          <li><b>02</b><strong>Select a room</strong><span>Request the space suitable for the project.</span></li>
+          <li><b>03</b><strong>Confirm availability</strong><span>This demo simulates the enquiry state only.</span></li>
+        </ol>
+      </section>
+
+      <section class="request" id="request">
+        <div>
+          <p class="eyebrow">SESSION REQUEST</p>
+          <h2>Start with a brief</h2>
+          <p class="muted">This is a frontend interaction demo. It stores and transmits no submitted information.</p>
+        </div>
+        <form id="requestForm">
+          <label>
+            Session type
+            <select name="type">
+              <option>Recording session</option>
+              <option>Mix review</option>
+              <option>Vocal session</option>
+            </select>
+          </label>
+          <label>
+            Preferred room
+            <select name="room">
+              <option>Control Room</option>
+              <option>Live Room</option>
+              <option>Vocal Booth</option>
+            </select>
+          </label>
+          <label class="wide">
+            Project note
+            <textarea name="note" placeholder="Describe the type of session..." required></textarea>
+          </label>
+          <button class="wide" type="submit">Simulate request</button>
+          <p class="confirmation wide" id="confirmation" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer>ONA Studio public UI concept | All content and interactions are demonstrative.</footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
