@@ -6,6 +6,8 @@
   <img src="https://img.shields.io/badge/Artifact-Runnable%20UI%20Demo-d0a866?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Public%20Code-HTML%20%2B%20CSS%20%2B%20JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Original%20Project-Private-334155?style=for-the-badge"/>
+  <br/>
+  <a href="README.es.md">🇪🇸 Español</a>
 </div>
 
 ## Public Concept
